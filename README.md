@@ -9,13 +9,13 @@ Verilog Implementation of a 2-way set associative way halting cache(1 KB) with a
 **2 way set associative, Way Halting Cache with Write Back policy**  <br>
 **FIFO Replacement**  <br>
 
-Number of bits used for offset, index and tag (32 bit physical address):
+#####Number of bits used for offset, index and tag (32 bit physical address):
     
     Offset: 5 bits 
     Index : 4 bits
     Tag   : 23 bits
     
-**Total Cache Size: **
+#####Total Cache Size: 
 
 1. 16*1 (16, 1-bit regs for dirty bit) per set => 2 B  <br>
 2. 16*1 (16, 1-bit regs for valid bit) per set => 2 B <br>
@@ -24,17 +24,17 @@ Number of bits used for offset, index and tag (32 bit physical address):
 
 (1., 2. 3. 4. )* 2 -> gives total for both sets together => 50*2 = 100B  <br>
 
-**Counter for FIFO replacement:**  <br>
+Counter for FIFO replacement:  <br>
 
 2 (one per each way) * 16* 1(since, one bit array) => 32 bits (4 bytes)  <br>
 
 1024 bytes (total cache data size)         <br>
 100 B (extra registers, tags, etc.)  <br>
 4 B (replacement policy)  <br>
-
+<br>
 **Thus, TOTAL = 1024 + 100 + 4 = 1128 B for the cache**
  <br>
-As per the designed test bench in the *cache_Final.v* file, the following is the number of cache hits and misses:  <br>
+As per the designed test bench in the *cache_Final.v* file, the following is the number of cache hits and misses:  <br>  <br>
 Number of Cache Hits    :   1 + 1 +     1 + 1 +     + 1 + 3 +  +2  = 10  <br>
 Number of Cache Misses  : 1       + 1 +         1 +          +2    = 5  <br>
 
