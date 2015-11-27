@@ -35,6 +35,6 @@ Counter for FIFO replacement:  <br>
  <br>
  <br>
 As per the designed test bench in the *cache_Final.v* file, the following is the number of cache hits and misses:  <br>  <br>
-Number of Cache Hits    :   1 + 1 +     1 + 1 +     + 1 + 3 +  +2  = 10  <br>
-Number of Cache Misses  : 1       + 1 +         1 +          +2    = 5  <br>
+    > Number of Cache Hits    :   1 + 1 +     1 + 1 +     + 1 + 3 +  +2  = 10  <br>
+    > Number of Cache Misses  : 1       + 1 +         1 +          +2    = 5  <br>
 
