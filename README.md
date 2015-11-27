@@ -31,8 +31,8 @@ Counter for FIFO replacement:  <br>
 1024 bytes (total cache data size)         <br>
 100 B (extra registers, tags, etc.)  <br>
 4 B (replacement policy)  <br>
-<br>
 **Thus, TOTAL = 1024 + 100 + 4 = 1128 B for the cache**
+ <br>
  <br>
 As per the designed test bench in the *cache_Final.v* file, the following is the number of cache hits and misses:  <br>  <br>
 Number of Cache Hits    :   1 + 1 +     1 + 1 +     + 1 + 3 +  +2  = 10  <br>
